@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrimento de Nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrimento de Nacionalidade:</h1>
+
+
+    <div id="result">
+
+    </div>
+    <input type="text" name="txtcountry" id="txtcountry">
+
+    <input type="button" value="Verificar" onclick="verification()">
+    
+
+    <script>
+     
+
+        function verification()
+        {
+            var txtcountry = document.getElementById('txtcountry')
+
+            var nacionalidade = (txtcountry.value)
+
+            var result = document.querySelector('div#result')
+
+            
+
+            if(nacionalidade == 'Brasil')
+            {
+                result.innerHTML(`Você é Brasileiro`)
+            }
+
+            else
+            {
+                result.innerHTML(`Você é gringo`)
+            }
+        }
+    </script>
+</body>
+</html>
